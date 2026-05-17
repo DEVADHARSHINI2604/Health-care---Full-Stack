@@ -1,0 +1,545 @@
+{
+  "users": [
+    {
+      "id": "U001",
+      "name": "Kannan",
+      "email": "kannan@example.com",
+      "role": "patient",
+      "familyId": "FAM001"
+    },
+    {
+      "id": "U002",
+      "name": "Rajesh",
+      "email": "rajesh@example.com",
+      "role": "patient",
+      "familyId": "FAM002"
+    },
+    {
+      "id": "DOC001",
+      "name": "Dr. Rajesh",
+      "email": "rajesh@hospital.com",
+      "role": "doctor"
+    },
+    {
+      "id": "DOC002",
+      "name": "Dr. Priya",
+      "email": "priya@hospital.com",
+      "role": "doctor"
+    },
+    {
+      "id": "DOC006",
+      "name": "Dr. Kavitha",
+      "email": "kavitha@kauvery.com",
+      "role": "doctor"
+    },
+    {
+      "id": "DOC007",
+      "name": "Dr. Senthil",
+      "email": "senthil@skhospital.com",
+      "role": "doctor"
+    },
+    {
+      "id": "DOC008",
+      "name": "Dr. Meera",
+      "email": "meera@gh.com",
+      "role": "doctor"
+    },
+    {
+      "id": "DOC009",
+      "name": "Dr. Naveen",
+      "email": "naveen@skhospital.com",
+      "role": "doctor"
+    }
+  ],
+  "family_members": [
+    {
+      "id": "FM001",
+      "familyId": "FAM001",
+      "name": "Kannan",
+      "dateOfBirth": "1985-05-15",
+      "bloodGroup": "O+",
+      "relation": "Self",
+      "gender": "Male",
+      "allergies": [
+        "Penicillin",
+        "Peanuts"
+      ],
+      "chronicConditions": [
+        "Hypertension"
+      ]
+    },
+    {
+      "id": "FM002",
+      "familyId": "FAM001",
+      "name": "Maya",
+      "dateOfBirth": "1987-08-22",
+      "bloodGroup": "A+",
+      "relation": "Spouse",
+      "gender": "Female",
+      "allergies": [
+        "Latex"
+      ],
+      "chronicConditions": []
+    },
+    {
+      "id": "FM003",
+      "familyId": "FAM001",
+      "name": "Ananya",
+      "dateOfBirth": "2015-03-10",
+      "bloodGroup": "O+",
+      "relation": "Daughter",
+      "gender": "Female",
+      "allergies": [],
+      "chronicConditions": [
+        "Asthma"
+      ]
+    },
+    {
+      "id": "FM004",
+      "familyId": "FAM002",
+      "name": "Rajesh",
+      "dateOfBirth": "1990-01-01",
+      "bloodGroup": "B+",
+      "relation": "Self",
+      "gender": "Male",
+      "allergies": [],
+      "chronicConditions": [
+        "Seasonal Allergies"
+      ]
+    },
+    {
+      "id": "FM005",
+      "familyId": "FAM002",
+      "name": "Joshika",
+      "dateOfBirth": "1992-05-10",
+      "bloodGroup": "B+",
+      "relation": "Wife",
+      "gender": "Female",
+      "allergies": [],
+      "chronicConditions": [
+        "Anemia"
+      ]
+    },
+    {
+      "id": "FM006",
+      "familyId": "FAM002",
+      "name": "Raman",
+      "dateOfBirth": "1988-11-20",
+      "bloodGroup": "A-",
+      "relation": "Brother",
+      "gender": "Male",
+      "allergies": [],
+      "chronicConditions": []
+    },
+    {
+      "id": "FM007",
+      "familyId": "FAM002",
+      "name": "Abi",
+      "dateOfBirth": "2018-09-05",
+      "bloodGroup": "B+",
+      "relation": "Daughter",
+      "gender": "Female",
+      "allergies": [],
+      "chronicConditions": [
+        "Frequent Fever"
+      ]
+    }
+  ],
+  "medical_records": [
+    {
+      "id": "MR001",
+      "patientId": "FM001",
+      "patientName": "Kannan",
+      "date": "2026-03-15",
+      "diagnosis": "Hypertension - Regular Checkup",
+      "prescription": "Amlodipine 5mg - Once daily",
+      "doctorName": "Dr. Rajesh",
+      "notes": "Blood pressure under control. Continue medication."
+    },
+    {
+      "id": "MR003",
+      "patientId": "FM003",
+      "patientName": "Ananya",
+      "date": "2026-02-28",
+      "diagnosis": "Asthma - Follow-up",
+      "prescription": "Albuterol Inhaler - As needed",
+      "doctorName": "Dr. Priya",
+      "notes": "Asthma well controlled. No recent episodes."
+    },
+    {
+      "id": "MR002",
+      "patientId": "FM007",
+      "patientName": "Abi",
+      "date": "2026-04-10",
+      "diagnosis": "Viral Fever",
+      "prescription": "Paracetamol Syrup - 5ml every 6 hours",
+      "doctorName": "Dr. Priya",
+      "notes": "Monitor temperature for 48 hours."
+    }
+  ],
+  "appointments": [
+    {
+      "id": "APT001",
+      "patientId": "FM001",
+      "patientName": "Kannan",
+      "familyId": "FAM001",
+      "doctorId": "DOC001",
+      "doctorName": "Dr. Rajesh",
+      "specialty": "Cardiology",
+      "date": "2026-04-15",
+      "time": "10:00 AM",
+      "status": "scheduled",
+      "notes": "Regular blood pressure checkup"
+    },
+    {
+      "id": "APT002",
+      "patientId": "FM002",
+      "patientName": "Maya",
+      "familyId": "FAM001",
+      "doctorId": "DOC003",
+      "doctorName": "Dr. Vikram",
+      "specialty": "General Medicine",
+      "date": "2026-04-10",
+      "time": "2:00 PM",
+      "status": "scheduled",
+      "notes": "Annual health checkup"
+    },
+    {
+      "id": "APT003",
+      "patientId": "FM003",
+      "patientName": "Ananya",
+      "familyId": "FAM001",
+      "doctorId": "DOC002",
+      "doctorName": "Dr. Priya",
+      "specialty": "Pediatrics",
+      "date": "2026-04-08",
+      "time": "11:30 AM",
+      "status": "scheduled",
+      "notes": "Asthma follow-up"
+    },
+    {
+      "id": "APT-4155-AN7S",
+      "patientId": "FM005",
+      "patientName": "Joshika",
+      "familyId": "FAM002",
+      "doctorId": "DOC002",
+      "doctorName": "Dr. Priya",
+      "specialty": "Pediatrics",
+      "date": "2026-04-17",
+      "time": "11:00 AM",
+      "status": "pending",
+      "notes": "stomach pain"
+    },
+    {
+      "id": "APT-3928-FJ26",
+      "patientId": "FM006",
+      "patientName": "Raman",
+      "familyId": "FAM002",
+      "doctorId": "DOC001",
+      "doctorName": "Dr. Rajesh",
+      "specialty": "Cardiology",
+      "date": "2026-04-30",
+      "time": "02:00 PM",
+      "status": "pending",
+      "notes": "fever"
+    },
+    {
+      "id": "APT-6943-T12I",
+      "patientId": "FM007",
+      "patientName": "Abi",
+      "familyId": "FAM002",
+      "doctorId": "DOC001",
+      "doctorName": "Dr. Rajesh",
+      "specialty": "Cardiology",
+      "date": "2026-04-17",
+      "time": "03:00 PM",
+      "status": "cancelled",
+      "notes": ""
+    },
+    {
+      "id": "APT-9416-1UDO",
+      "patientId": "FM005",
+      "patientName": "Joshika",
+      "familyId": "FAM002",
+      "doctorId": "DOC007",
+      "doctorName": "Dr. Senthil",
+      "specialty": "Orthopedics",
+      "date": "2026-04-30",
+      "time": "10:00 AM",
+      "status": "confirmed",
+      "notes": "fever"
+    },
+    {
+      "id": "APT-7890-9GCD",
+      "patientId": "FM004",
+      "patientName": "Rajesh",
+      "familyId": "FAM002",
+      "doctorId": "DOC008",
+      "doctorName": "Dr. Meera",
+      "specialty": "Gynecology",
+      "date": "2026-04-30",
+      "time": "03:00 PM",
+      "status": "pending",
+      "notes": "headache"
+    },
+    {
+      "id": "APT-3069-S1NA",
+      "patientId": "FM001",
+      "patientName": "Kannan",
+      "familyId": "FAM001",
+      "doctorId": "DOC002",
+      "doctorName": "Dr. Priya",
+      "specialty": "Pediatrics",
+      "date": "2026-04-24",
+      "time": "11:00 AM",
+      "status": "pending",
+      "notes": "fever"
+    },
+    {
+      "id": "APT-3919-OP4J",
+      "patientId": "FM005",
+      "patientName": "Joshika",
+      "familyId": "FAM002",
+      "doctorId": "DOC006",
+      "doctorName": "Dr. Kavitha",
+      "specialty": "Dermatology",
+      "date": "2026-04-29",
+      "time": "10:00 AM",
+      "status": "pending",
+      "notes": "fever"
+    },
+    {
+      "id": "APT-9139-BMZ6",
+      "patientId": "FM004",
+      "patientName": "Rajesh",
+      "familyId": "FAM002",
+      "doctorId": "DOC001",
+      "doctorName": "Dr. Rajesh",
+      "specialty": "Cardiology",
+      "date": "2026-04-29",
+      "time": "11:00 AM",
+      "status": "confirmed",
+      "notes": "fever"
+    }
+  ],
+  "doctors": [
+    {
+      "id": "DOC001",
+      "name": "Dr. Rajesh",
+      "specialty": "Cardiology",
+      "email": "rajesh@hospital.com",
+      "phone": "+91-98765-43210",
+      "location": "City Medical Center",
+      "distance": "2.5 km",
+      "rating": 4.8,
+      "experience": 15,
+      "hospital": "Apollo Hospital",
+      "hospitalLocation": "Greams Road, Chennai",
+      "availability": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ]
+    },
+    {
+      "id": "DOC002",
+      "name": "Dr. Priya",
+      "specialty": "Pediatrics",
+      "email": "priya@hospital.com",
+      "phone": "+91-98765-43211",
+      "location": "Children's Clinic",
+      "distance": "1.8 km",
+      "rating": 4.9,
+      "experience": 12,
+      "hospital": "Children's General Hospital (GH)",
+      "hospitalLocation": "Adyar, Chennai",
+      "availability": [
+        "Mon",
+        "Tue",
+        "Thu"
+      ]
+    },
+    {
+      "id": "DOC003",
+      "name": "Dr. Vikram",
+      "specialty": "General Medicine",
+      "email": "vikram@hospital.com",
+      "phone": "+91-98765-43212",
+      "location": "Metro Hospital",
+      "distance": "3.2 km",
+      "rating": 4.7,
+      "experience": 20,
+      "availability": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ]
+    },
+    {
+      "id": "DOC006",
+      "name": "Dr. Kavitha",
+      "specialty": "Dermatology",
+      "email": "kavitha@kauvery.com",
+      "phone": "+91-98765-43215",
+      "location": "Kauvery Hospital",
+      "distance": "4.1 km",
+      "rating": 4.6,
+      "experience": 10,
+      "hospital": "Kauvery Hospital",
+      "hospitalLocation": "Alwarpet, Chennai",
+      "availability": [
+        "Mon",
+        "Wed",
+        "Sat"
+      ]
+    },
+    {
+      "id": "DOC007",
+      "name": "Dr. Senthil",
+      "specialty": "Orthopedics",
+      "email": "senthil@skhospital.com",
+      "phone": "+91-98765-43216",
+      "location": "SK Hospital West",
+      "distance": "3.5 km",
+      "rating": 4.7,
+      "experience": 14,
+      "hospital": "SK Hospital",
+      "hospitalLocation": "Anna Nagar, Chennai",
+      "availability": [
+        "Tue",
+        "Thu",
+        "Sat"
+      ]
+    },
+    {
+      "id": "DOC008",
+      "name": "Dr. Meera",
+      "specialty": "Gynecology",
+      "email": "meera@gh.com",
+      "phone": "+91-98765-43217",
+      "location": "Government General Hospital",
+      "distance": "0.8 km",
+      "rating": 4.5,
+      "experience": 22,
+      "hospital": "Government Hospital (GH)",
+      "hospitalLocation": "Park Town, Chennai",
+      "availability": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ]
+    },
+    {
+      "id": "DOC009",
+      "name": "Dr. Naveen",
+      "specialty": "Neurology",
+      "email": "naveen@skhospital.com",
+      "phone": "+91-98765-43218",
+      "location": "SK Hospital East",
+      "distance": "3.8 km",
+      "rating": 4.8,
+      "experience": 16,
+      "hospital": "SK Hospital",
+      "hospitalLocation": "Anna Nagar, Chennai",
+      "availability": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "NOT1776168794232",
+      "type": "appointment",
+      "title": "New Appointment Booked",
+      "message": "Joshika has booked an appointment regarding: stomach pain.",
+      "timestamp": "2026-04-14T12:13:14.233Z",
+      "read": false
+    },
+    {
+      "id": "NOT1776176293961",
+      "type": "appointment",
+      "title": "New Appointment Booked",
+      "message": "Raman has booked an appointment regarding: fever.",
+      "timestamp": "2026-04-14T14:18:13.961Z",
+      "read": false
+    },
+    {
+      "id": "NOT1776177696972",
+      "type": "appointment",
+      "title": "New Appointment Booked",
+      "message": "Abi has booked an appointment regarding: No symptoms specified.",
+      "timestamp": "2026-04-14T14:41:36.972Z",
+      "read": false
+    },
+    {
+      "id": "NOT1776230919447",
+      "type": "appointment",
+      "title": "New Appointment Booked",
+      "message": "Joshika has booked an appointment regarding: fever.",
+      "timestamp": "2026-04-15T05:28:39.447Z",
+      "read": false
+    },
+    {
+      "id": "NOT-2127-R40D",
+      "type": "appointment",
+      "title": "Appointment Confirm - HealthPort",
+      "message": "Your appointment with Dr. Senthil on 2026-04-30 at 10:00 AM has been confirmed.",
+      "timestamp": "2026-04-15T05:30:32.127Z",
+      "read": false
+    },
+    {
+      "id": "NOT1776257597908",
+      "type": "appointment",
+      "title": "New Appointment Booked",
+      "message": "Rajesh has booked an appointment regarding: headache.",
+      "timestamp": "2026-04-15T12:53:17.908Z",
+      "read": false
+    },
+    {
+      "id": "NOT1776760403202",
+      "type": "appointment",
+      "title": "New Appointment Booked",
+      "message": "Kannan has booked an appointment regarding: fever.",
+      "timestamp": "2026-04-21T08:33:23.202Z",
+      "read": false
+    },
+    {
+      "id": "NOT1776761154020",
+      "type": "appointment",
+      "title": "New Appointment Booked",
+      "message": "Joshika has booked an appointment regarding: fever.",
+      "timestamp": "2026-04-21T08:45:54.020Z",
+      "read": false
+    },
+    {
+      "id": "NOT1776761249252",
+      "type": "appointment",
+      "title": "New Appointment Booked",
+      "message": "Rajesh has booked an appointment regarding: fever.",
+      "timestamp": "2026-04-21T08:47:29.252Z",
+      "read": false
+    },
+    {
+      "id": "NOT-3205-LGJ3",
+      "type": "appointment",
+      "title": "Appointment Confirm - HealthPort",
+      "message": "Your appointment with Dr. Rajesh on 2026-04-29 at 11:00 AM has been confirmed.",
+      "timestamp": "2026-04-21T08:48:03.205Z",
+      "read": false
+    }
+  ],
+  "family_groups": [
+    {
+      "id": "FAM001",
+      "name": "The Kannan Family"
+    },
+    {
+      "id": "FAM002",
+      "name": "The Rajesh Family"
+    }
+  ]
+}
