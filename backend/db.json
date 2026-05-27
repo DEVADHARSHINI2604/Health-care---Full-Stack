@@ -320,6 +320,32 @@
       "time": "11:00 AM",
       "status": "confirmed",
       "notes": "fever"
+    },
+    {
+      "id": "APT-3162-RIGE",
+      "patientId": "FM005",
+      "patientName": "Joshika",
+      "familyId": "FAM002",
+      "doctorId": "DOC002",
+      "doctorName": "Dr. Priya",
+      "specialty": "Pediatrics",
+      "date": "2026-05-31",
+      "time": "11:00 AM",
+      "status": "confirmed",
+      "notes": "fever"
+    },
+    {
+      "id": "APT-3901-KYKY",
+      "patientId": "FM004",
+      "patientName": "Rajesh",
+      "familyId": "FAM002",
+      "doctorId": "DOC002",
+      "doctorName": "Dr. Priya",
+      "specialty": "Pediatrics",
+      "date": "2026-05-28",
+      "time": "02:00 PM",
+      "status": "pending",
+      "notes": ""
     }
   ],
   "doctors": [
@@ -529,6 +555,30 @@
       "title": "Appointment Confirm - HealthPort",
       "message": "Your appointment with Dr. Rajesh on 2026-04-29 at 11:00 AM has been confirmed.",
       "timestamp": "2026-04-21T08:48:03.205Z",
+      "read": false
+    },
+    {
+      "id": "NOT1779848133367",
+      "type": "appointment",
+      "title": "New Appointment Booked",
+      "message": "Joshika has booked an appointment regarding: fever.",
+      "timestamp": "2026-05-27T02:15:33.367Z",
+      "read": false
+    },
+    {
+      "id": "NOT1779848194080",
+      "type": "appointment",
+      "title": "New Appointment Booked",
+      "message": "Rajesh has booked an appointment regarding: No symptoms specified.",
+      "timestamp": "2026-05-27T02:16:34.080Z",
+      "read": false
+    },
+    {
+      "id": "NOT-3554-YQQD",
+      "type": "appointment",
+      "title": "Appointment Confirm - HealthPort",
+      "message": "Your appointment with Dr. Priya on 2026-05-31 at 11:00 AM has been confirmed.",
+      "timestamp": "2026-05-27T02:18:13.554Z",
       "read": false
     }
   ],
