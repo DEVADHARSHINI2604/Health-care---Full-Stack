@@ -4,10 +4,13 @@
   "version": "1.0.0",
   "description": "Root management for Family Medical Record System",
   "scripts": {
+    
     "dev": "concurrently \"npm --prefix frontend run dev\" \"npm --prefix backend run dev\"",
     "install-all": "npm install && npm --prefix frontend install && npm --prefix backend install",
     "frontend": "npm --prefix frontend run dev",
-    "backend": "npm --prefix backend run dev"
+    "backend": "npm --prefix backend run dev",
+    "start": "npm --prefix backend start"
+    
   },
   "dependencies": {
     "concurrently": "^8.2.2"
